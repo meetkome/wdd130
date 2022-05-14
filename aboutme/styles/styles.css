@@ -1,7 +1,4 @@
-body {
-    text-align: center;
-}
-nav {
+nav{
     background-color: steelblue;
     padding: 10px;
 }
@@ -30,4 +27,39 @@ footer {
 #active {
     background-color: white;
     color: steelblue;
+}
+img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+p{
+    width: 80%
+}
+a{
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+main p{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+nav, footer {
+    background-color: steelblue;
+    color: white;
+}
+footer p{
+    font-size: 20px;
+    margin: 20px auto;
+}
+a:hover {
+    background-color: white;
+    color: steelblue:
 }
