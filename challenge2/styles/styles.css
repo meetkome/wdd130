@@ -1,0 +1,14 @@
+div img{
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 60px 100px;
+    box-sizing: border-box; 
+}
+body{
+    background-color: rgb(68, 67, 67);
+}
+a img{
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
