@@ -10,6 +10,9 @@ nav a{
 #hero-msg h1, #hero-msg h4{
     text-align: center;
 }
+#hero-img{
+    width: 100%;
+}
 .button-box{
     text-align: center;
 }
@@ -17,40 +20,56 @@ main section{
     text-align: center;
 }
 #background{
-    height: 725px;
+    
 }
 body{
     background-color: #01302a;
+    font-family: 'Nanum Gothic', 'Helvetica', 'sans-serif';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
 }
 header{
-    background-color:#01302a;
+    background-color:#f29129;
 }
 nav a:hover{
     background-color: #01302a;
     color: #f29129;
-}
-.book, .join{
-    background-color: #fcfeff;
 }
 .book:hover, .join:hover{
     background-color: #01302a;
 }
 #background{
     background-color: #ffa23e;
+    height: 725px;
 }
 .msg{
     background-color: #01302a;
+    line-height: 1.5em;
+    font-size: .8em;
+    padding: 35px;
 }
 footer{
     background-color: #01302a;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 nav a{
-    background-color: #01302a;
+    text-decoration: none;
+    background-color: #f29129;
     color: #fcfeff;
+    text-align: center;
+    padding: 35px;
 }
 .home-title{
+    font-family: 'Nanum Gothic', 'Helvetica', 'sans-serif';
     background-color: #01302a;
     color: #f29129;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     background-color: #01302a;
@@ -61,6 +80,9 @@ h4{
     background-color: #fcfeff;
     color: #01302a;
     text-decoration: none;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 15px 30px;
 }
 .book:hover, .join:hover{
     background-color: #01302a;
@@ -73,6 +95,7 @@ h4{
 .msg p{
     background-color: #01302a;
     color: #fcfeff;
+    padding-bottom: 15px;
 }
 footer h3{
     background-color: #01302a;
@@ -90,7 +113,24 @@ footer a:hover{
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 footer h3 a:hover{
     text-decoration: underline;
+}
+#logo_link{
+    padding-top: 5px;
+
+}
+footer .social img{
+    padding-top: 15px;
+}
+.river-card, .camping-card, .rapid-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #f29129;
+}
+main section img {
+    box-sizing: border-box;
 }
