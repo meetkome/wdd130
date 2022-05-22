@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Gothic&family=Playfair+Display:wght@600&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -16,21 +18,20 @@ nav a{
 .button-box{
     text-align: center;
 }
-main section{
+main, section{
     text-align: center;
-}
-#background{
-    
 }
 body{
     background-color: #01302a;
-    font-family: 'Nanum Gothic', 'Helvetica', 'sans-serif';
+    font-family: 'Playfair Display', 'serif';
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
 h2{
+    font-family: 'Playfair Display', 'serif';
     margin: 0;
+
 }
 header{
     background-color:#f29129;
@@ -51,6 +52,7 @@ nav a:hover{
     line-height: 1.5em;
     font-size: .8em;
     padding: 35px;
+    font-family: 'Nanum Gothic', 'sans-serif';
 }
 footer{
     background-color: #01302a;
@@ -65,7 +67,7 @@ nav a{
     padding: 35px;
 }
 .home-title{
-    font-family: 'Nanum Gothic', 'Helvetica', 'sans-serif';
+    font-family: 'Playfair Display', 'serif';
     background-color: #01302a;
     color: #f29129;
     font-size: 2em;
@@ -75,14 +77,14 @@ h4{
     background-color: #01302a;
     color: #fcfeff;
 }
-.book, .join{
-    text-align: center;
-    background-color: #fcfeff;
-    color: #01302a;
-    text-decoration: none;
-    margin-top: 50px;
-    border-radius: 5px;
-    padding: 15px 30px;
+.book, .join {
+  text-align: center;
+ margin: 50px;
+  background-color: #FCFEFF;
+ color: #01302a;
+ text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #01302a;
@@ -134,3 +136,15 @@ footer .social img{
 main section img {
     box-sizing: border-box;
 }
+.mountains {
+    width: 85%;
+    margin: 50px 15px 25px 15px;
+}
+h1, h2, h5, h6 {
+    padding: 10px;
+    color: #f29129;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    text-align: center;
+  }
+  
