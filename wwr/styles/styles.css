@@ -351,9 +351,10 @@ footer {
     grid-row: 8;
     grid-column: 4;
     float: right;
+    
   }
   .econtact img{
-    margin-bottom: -4;
+    margin-bottom: -4px;
     float: left;
   }
   div a{
