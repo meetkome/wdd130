@@ -31,26 +31,53 @@
             <a class="gift" href="gifts.html">Gifts</a> 
           </div>
       </header>
-  <main class="fragrances-grid">
-        <section class="a-card">
-            <img class="amber-img" src="images/amber.jpg" width="275px" alt="Show Image">
-        </section>
-        <section class="b-card">
-            <img class="boom-img" src="images/boomingboo.jpg" width="275px" alt="Resist image">
-        </section>
-        <section class="c-card">
-            <img class="good-img" src="images/crush.jpg" width="275px" alt="two image">
-        </section>
-        <section class="l-card">
-            <img class="drop-img" src="images/bottles.jpg" width="275px" alt="two image">
-        </section>
-        <section class="o-card">
-            <img class="oud-img" src="images/oudfantasy.jpg" width="275px" alt="two image">
-        </section>
-        <section class="end-card">
-            <img class="onemore-img" src="images/oudfantasy.jpg" width="275px" alt="two image">
-        </section>
-      </main>
+    </style>
+  </head>
+
+  
+  <div style="text-align:center">
+    <h2>Tabbed Image Gallery</h2>
+    <p>Click on the images below:</p>
+  </div>
+  
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="images/amber.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/boomingboo.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/crush.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/oudfantasy.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/bottles.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/oudfantasy.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+  
       <h8>Fragrances</h8>
       <div class="points">
         <section class="two-card">
