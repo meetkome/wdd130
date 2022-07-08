@@ -290,7 +290,7 @@ footer .social img{
   box-sizing: border-box;
 }
 .column {
-float: left;
+float: right;
 padding: 25px;
 width: 33.33%;
 
@@ -302,7 +302,6 @@ display: table;
 clear: both;
 }
 form {
-/* Center the form on the page */
 margin: 0 auto;
 width: 400px;
 /* form outline */
@@ -325,7 +324,7 @@ label {
 /* Uniform size & alignment */
 display: inline-block;
 width: 90px;
-text-align: right;
+text-align: left;
 }
 
 input, textarea {
@@ -362,6 +361,7 @@ margin-left: .5em;
   background-color: #00004e;
   color: #fcfeff;
   margin-top: 50px;
+  margin-left: 50px;
 }
 .block1 h2 {
   text-align: center;
@@ -534,7 +534,7 @@ h8 {
   opacity: 1;
   display: block;
   width: 100%;
-  height: 500px;
+  height: 700px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -616,7 +616,33 @@ h8 {
   font-size: 35px;
   cursor: pointer;
 }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;

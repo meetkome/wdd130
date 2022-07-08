@@ -172,10 +172,10 @@ body {
   }
   
   .text {
-    background-color: #04AA6D;
+    background-color: #4c04aa;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 36px;
+    padding: 40px 62px;
   }
 
   /*SIDE NAVIGATION */
