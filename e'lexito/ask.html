@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elexito - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="content">
+      <header>
+          <div class="navbar">
+            <a id="logo_link" href="index.html">
+              <img class="logo" src="images/elexitologo.png" width="75" height="75" alt="logo">
+            </a>
+              <a class="home" href="index.html">Home</a>
+            <a class="blog" href="blog.html">exito! blog</a>
+            <div class="dropdown">
+              <button class="dropbtn">Fragrances 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="fragrances.html">Amber</a>
+                <a href="fragrances.html">Boomingboo</a>
+                <a href="fragrances.html">Crush</a>
+                <a href="fragrances.html">Love drop</a>
+                <a href="fragrances.html">Oud Fantansy</a>
+              </div>
+            </div>
+            <a class="gift" href="gifts.html">Gifts</a> 
+          </div>
+      </header>
+      
+      <h1>EXITO COMMUNITY</h1>
+
+      <button onclick="typeWriter()">Click me</button>
+      
+      <p id="demo"></p>
+      
+      <script>
+      var i = 0;
+      var txt = 'We can have all the fun in the world when we smell great.';
+      var speed = 50;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      </script>
+
+
+      <footer>
+        <p id="info">&copy; 2022 exito  - Oghenekome Igho - WDD130-03</p>
+      
+        <p><a class="footer-links" href="site-plan.html">Site Plan</a></p>
+      
+        <p><a class="footer-links" href="blog.html">about Us</a></p>
+      
+        <div class="social">
+          
+            <a class="socialmedia" target="_blank" href="https://facebook.com"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
+          
+            <a class="socialmedia" target="_blank" href="https://twitter.com"><img class="icons" src="images/twitter.png" alt="twitter icon"></a>
+          
+            <a class="socialmedia" target="_blank" href="https://instagram.com"><img class="icons" src="images/instagram.png" alt="instagram icon"></a>
+        </div>
+    </footer>
+  
+  </div>
+</body>
+</html>
+
+
+

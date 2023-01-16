@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elexito - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div id="content">
+      <header>
+          <div class="navbar">
+            <a id="logo_link" href="index.html">
+              <img class="logo" src="images/elexitologo.png" width="75" height="75" alt="logo">
+            </a>
+            <a class="home" href="index.html">Home</a>
+            <a class="blog" href="blog.html">exito! blog</a>
+            <div class="dropdown">
+              <button class="dropbtn">Fragrances 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="fragrances.html">Amber</a>
+                <a href="fragrances.html">Boomingboo</a>
+                <a href="fragrances.html">Crush</a>
+                <a href="fragrances.html">Love drop</a>
+                <a href="fragrances.html">Oud Fantansy</a>
+              </div>
+            </div>
+            <a class="gift" href="gifts.html">Gifts</a> 
+          </div>
+      </header>
+ 
+    <div class="card">
+      <h3>exito! Blog</h3>
+      <div class="fakeimg"><a href="blogpost.html">FAQs</a></div><br>
+      <div class="fakeimg"><a href="ask.html">Do's and Don't for perfume usage</a></div>
+    </div>
+ 
+    <div class="container1">
+      <img src="https://cdn.glitch.global/1ffb6c23-c530-413f-8e63-646d06fb1d34/oudgreen.jpg?v=1657306134741" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">El_exito</div>
+    </div>
+    <section class="block1">
+      <h2>You Should Know</h2>
+      <h5>----Do not spray directly onto skin----</h5>
+      <p>"Perfume are not anti-aspirant. A perfume covered skin is more vulnerable to sun damage and ageing pigmentation"</p>
+    </section>
+  </div>
+  <main class="grid1">
+    <section class="pcontact">
+      <img src="https://cdn.glitch.global/bc9d9d92-be9b-49b1-b5b2-0705e723ac7d/contactus.png?v=1657048190475" width="25" alt="phone icon">
+      <a href="tel:866-667-08411">Phone: +234-813-957-5477</a>
+    </section>
+    <section class="econtact">
+      <img src="https://cdn.glitch.global/bc9d9d92-be9b-49b1-b5b2-0705e723ac7d/contactus2.png?v=1657048131534" width="50" alt="email icon">
+      <a href="mailto:kvictory1010@gmail.com">pineryokeowo15@gmail.com</a>
+    `</section>
+    
+    
+    <section class="form1">
+      <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+      <ul>'
+          <li>
+              <label for="name"> Name:</label>
+              <input type="text" id="name" name="user_name">
+          </li>
+          <li>
+              <label for="mail"> E-mail:</label>
+              <input type="email" id="mail" name="user_email">
+          </li>
+          <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message">
+              </textarea>
+          </li>
+          <li class="button">
+              <button type="submit">Send your message</button>
+          </li>  
+      </ul>
+    </form>
+    </section>
+    <section class="pay">
+      <div class="card-icon">
+        <a href="payment.html"><h2>We Accept:</h2></a>
+        <img src="https://cdn.glitch.global/bc9d9d92-be9b-49b1-b5b2-0705e723ac7d/mastercard.png?v=1657048079647" width="100" alt="masters icon">
+        <img src="https://cdn.glitch.global/bc9d9d92-be9b-49b1-b5b2-0705e723ac7d/visa.png?v=1657048674837" width="100" alt="visa icon">
+        <img src="https://cdn.glitch.global/bc9d9d92-be9b-49b1-b5b2-0705e723ac7d/paypal.png?v=1657048244925" width="100" alt="paypal icon">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p id="info">&copy; 2022 exito  - Oghenekome Igho - WDD130-14</p>
+  
+    <p><a class="footer-links" href="site-plan.html">Site Plan</a></p>
+    
+    <p><a class="footer-links" href="blog.html">Contact Us</a></p>
+
+  
+    <div class="social">
+      
+        <a class="socialmedia" target="_blank" href="https://facebook.com"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
+      
+        <a class="socialmedia" target="_blank" href="https://twitter.com"><img class="icons" src="images/twitter.png" alt="twitter icon"></a>
+      
+        <a class="socialmedia" target="_blank" href="https://instagram.com"><img class="icons" src="images/instagram.png" alt="instagram icon"></a>
+    </div>
+</footer>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</div>
+</body>
+</html>
+

@@ -31,51 +31,40 @@
           <a class="gift" href="gifts.html">Gifts</a> 
         </div>
     </header>
-    <div id="welcome">
-     <div id="welcome-box">
-        <video id="welcome-vid" loop autoplay muted>
-            <source src="videos/IMG_2172.MP4" type="video/MP4">
-            Your browser does not support the video tag.
-        </video>
-      </div>
-      <section id="welcome-msg">
-          <div class="button-box">
+    <body>
+        <h1>CUSTOMER CARE</h1>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        
+          <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+          <p>In this example, the navigation menu will slide in, from left to right:</p>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
           
-          <button class="button2" ><span> Place Order </span><a class="contact" href="blog.html"></a></button>
-          </div>
-        </section>
-    </div>
-    <main class="home-grid">
-      <div id="background"></div>
-        <section class="show-card">
-            <img class="card-img" src="images/show.jpg" alt="Show Image">
-            <h2>Runway</h2>
-        </section>
-
-        <section class="resist-card">
-            <img class="card-img" src="images/resist.jpg" alt="Resist image">
-            <h2>No way you'd resist</h2>
-        </section>
-      
-        <section class="good-card">
-            <img class="card-img" src="images/smellgood.jpg" alt="two image">
-            <h2>we rock!</h2>
-        </section>
-          <img class="walk" src="images/walk.jpg" width="800" height="700" alt="elegance walk image">
-        <section class="msg">
-            <h2>You too can steal the show</h2>
-            <p>Watch as we reveal the ultimate code of seduction through our five distint, urban, trendy and different fragrances. </p>
-           <div class="button-box1">
-          <a class="join" href="fragrances.html">Own It</a>
-          </div>
-        </section>
-    </main>
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+          </script>
+    </body>
+        
+        
     <footer>
         <p id="info">&copy; 2022 exito  - Oghenekome Igho - WDD130-03</p>
       
         <p><a class="footer-links" href="site-plan.html">Site Plan</a></p>
       
-        <p><a class="footer-links" href="blog.html">About Us</a></p>
+        <p><a class="footer-links" href="blog.html">Contact Us</a></p>
       
         <div class="social">
           
@@ -90,4 +79,3 @@
   </div>
 </body>
 </html>
-
